@@ -425,7 +425,9 @@ if (text.includes("placa"))
   conn.sendMessage(id, hasil, MessageType.text); 
  })
  }		        
-
+ 		if (messagesC.includes('vermelho')){
+			return reply('ego rubro')
+		}
         if (messagesC.includes("preto")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
@@ -1470,7 +1472,6 @@ if (text.includes("placa"))
                       buff = await getBuffer(anu.result)
                       client.sendMessage(from, buff, image, {quoted: mek})
                       break
-					break
 				case 'nulis':
 				case 'tulis':
 					if (args.length < 1) return reply('O que você quer escrever??') 
